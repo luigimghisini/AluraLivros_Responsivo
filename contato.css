@@ -1,0 +1,67 @@
+.contato {
+    background-color: var(--branco);
+    padding: 1.8rem 1rem;
+}
+
+.contato_titulo, .contato_descricao{
+    background: var(--azul_gradiente);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contato_titulo {
+    font-size: 1.12rem;
+    font-weight: 500;
+}
+
+.contato_descricao {
+    font-weight: 300;
+    margin: 0.8rem 0 1.2rem 0;
+}
+
+.contato_input {
+    padding: 0.8rem;
+    border: solid var(--azul) 1px;
+    border-radius: 6rem;
+    width: 94%;
+}
+
+.contato_input::placeholder {
+font-family: var(--fonte_principal);
+font-size: 1rem;
+color: var(--azul);
+background: url(./Assets/camera.svg) no-repeat;
+padding-left: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .contato {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 1.8rem 6rem;
+    }
+    
+    .contato_textos {
+        align-items: center;
+        padding-top: 0.6rem;
+        width: 35%;
+    }
+
+    .contato_titulo {
+        font-size: 1.5rem;
+        
+    }
+
+    .contato_input {
+        width:35%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .contato {
+        padding: 2rem 25vw;
+    }
+}
